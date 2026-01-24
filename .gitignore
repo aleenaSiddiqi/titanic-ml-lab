@@ -10,4 +10,5 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
+.Python.DS_Store
+**/.DS_Store
