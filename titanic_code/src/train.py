@@ -32,6 +32,6 @@ def train_model(data_dir: str = "data", models_dir: str = "models") -> None:
     print(f"[TRAIN] Best CV accuracy: {grid.best_score_:.4f}")
 
     os.makedirs(models_dir, exist_ok=True)
-    out_path = os.path.join(models_dir, "titanic_pipeline.joblib")
+    out_path = os.path.join(models_dir, "titanic_pipeline_cloud.joblib")
     joblib.dump(grid.best_estimator_, out_path)
     print(f"[TRAIN] Saved pipeline to {out_path}")
