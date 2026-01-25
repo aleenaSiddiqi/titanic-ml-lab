@@ -34,6 +34,15 @@ Note: I misunderstood some things in the lab document and ended up blundering th
 3. Since the Azure VM is a different computer, so it needs its own SSH key for github. The repo was cloned and kaggle was setup on the VM.
 4. Then i trained a model again on azure and the model outout was saved to models/titanic_pipeline_cloud.joblib. Everything was commited and tagged. 
 
+<img width="1440" height="900" alt="1" src="https://github.com/user-attachments/assets/9fc4a1c8-24f3-4836-b1f1-813762c59df1" />
+<img width="1388" height="829" alt="2" src="https://github.com/user-attachments/assets/3c7f6f37-5c33-427c-b2a8-a6b6c49c852e" />
+<img width="1440" height="283" alt="3" src="https://github.com/user-attachments/assets/8b4c6ced-63d2-4a26-90b7-5313e7a306dc" />
+<img width="1440" height="900" alt="5" src="https://github.com/user-attachments/assets/57b3b445-1408-444f-b0c5-4b25f5cf1f28" />
+<img width="1440" height="900" alt="6" src="https://github.com/user-attachments/assets/9b5aed5a-8dfa-4beb-ab53-23ec25603e9d" />
+<img width="1440" height="900" alt="7" src="https://github.com/user-attachments/assets/16ed9b9c-3d57-4ffb-a394-93745dea81fd" />
+
+
+
 ## Git commands
 - git config --global user.name "Your Name" : sets your name that will appear on all your commits. Used during one-time setup on a new machine
 - git config --global user.email "your@email.com" : sets your email that will appear on all commits. Also used during the one-time setup on a new machine
@@ -52,5 +61,11 @@ Note: I misunderstood some things in the lab document and ended up blundering th
 - git push origin <tag-name> : uploads a specific tag to github / pushes one tag instead of all tags
 - git push origin --tags: uploads all your tags to github
 - git pull origin main : downloads commits from github and merges them into your local branch
-- 
+- git checkout -b <branch-name> : creates a new branch and switches to it immediately
+- git switch <branch-man> : switches to an existing branch
+- git tag -a v1.0 -m "Message" : creates a labeled checkpoint in your project history
+- git tag: lists all tags in your repository
+- git rm <file> : deletes a file and stages the deletion for commit
+- git rm -r <folder> : recursively deletes a folder and all its contents
+
 
