@@ -33,3 +33,24 @@ Note: I misunderstood some things in the lab document and ended up blundering th
 2. We setup the VM enviroment by updating package lists and installed essential tools. Then we installed miniconda on the VM. Miniconda provides same environment management as local machine and therefore ensures consistency.
 3. Since the Azure VM is a different computer, so it needs its own SSH key for github. The repo was cloned and kaggle was setup on the VM.
 4. Then i trained a model again on azure and the model outout was saved to models/titanic_pipeline_cloud.joblib. Everything was commited and tagged. 
+
+## Git commands
+- git config --global user.name "Your Name" : sets your name that will appear on all your commits. Used during one-time setup on a new machine
+- git config --global user.email "your@email.com" : sets your email that will appear on all commits. Also used during the one-time setup on a new machine
+- git config --list : shows all git configuration settings. Used to verify your name, email and other settings are correct. it displays settings like user.name, user.email, etc
+- git clone <repo-url> : downloads a complete copy of a repo from github to your computer
+- git remote -v : shows which remote repo your local folder is connected to. you can use this to verify you're pushing from the correct github repo
+- git status : shows which files have changed, which are staged, and which are untracked. used before commiting to see what you are about to save. red mean unmodified/untracked, green means staged and ready to commit
+- git log --oneline: shows a simplified list of all past commits. outputs a comit id and commit message
+- git branch : lists all branches and highlights which one you are currently on
+- git branch -a : lists all branches (local and remote)
+- git add filename: stages a specific file for the next commit. Used when you want to commit only certain files
+- git add . : stages all changed files in the current directory for commit
+- git reset : unstages all staged filed (not deletes) when you accidentally staged files you didn't want to commit
+- git commit -m "Message" : saves staged changes with a descriptive message. Used after staging files, to create a permanent snapshot
+- git push origin main : uploads your commits from local main branch to Github
+- git push origin <tag-name> : uploads a specific tag to github / pushes one tag instead of all tags
+- git push origin --tags: uploads all your tags to github
+- git pull origin main : downloads commits from github and merges them into your local branch
+- 
+
